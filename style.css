@@ -26,11 +26,7 @@ img{
   font-size: clamp(1.125rem, 1.05rem + 0.375vw, 1.5rem);
 }
 
-.actions {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
+
 
 .topbar {
   display: flex;
@@ -141,11 +137,12 @@ img{
 .nav-item.active {
   color: var(--primary);
 }
-
 .actions {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
+
 .open-menu,.close-menu{
   position: absolute;
   cursor: pointer;
@@ -435,25 +432,26 @@ h1 {
 }
 
 .info-section {
-  position: absolute;
-  bottom: -467px;
-  left: 50%;
- width: 100%;
+  position: relative;
+  width: 100%;
   display: flex;
+  flex-wrap: wrap; 
   justify-content: space-between;
-  transform: translate(-50%, -50%) scale(1.1);
-  margin: -15px auto;
+  top: -82px;
+ 
+  padding: 20px;
+  margin: 0 auto;
   max-width: 1400px;
 }
 
-
 .info-box {
-  flex: 1;
-  padding: 46px;
-  height: 282px;
-  max-width: 560px;
+  flex: 1 1 calc(33.33% - 40px); 
+  box-sizing: border-box; 
+  padding: 76px;
   color: var(--light);
   text-align: center;
+  background-color: var(--primary); 
+  min-width: 280px; 
 }
 
 .info-box.bg-primary {
@@ -466,24 +464,17 @@ h1 {
 
 .info-box.bg-secondary {
   background-color: var(--secondary);
-  background-color: var(--secondary);
-  text-indent: 20px;
-  line-height: 1.5;
-  font-size: 18px;
-  color: var(--light);
-
-  }
+}
 
 .info-title {
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 15px;
 }
 
 .info-list {
   list-style: none;
-  padding: 35px;
-  margin: 0;
-  margin-bottom: 15px;
+  padding: 0;
+  margin: 15px 0;
   text-align: left;
   font-weight: bold;
   font-size: large;
@@ -497,44 +488,44 @@ h1 {
 
 .btn-light {
   display: inline-block;
-  width: 90%;
-  padding: 13px 1px;
+  width: 100%;
+  padding: 12px 0;
   background-color: var(--light);
   color: var(--dark);
   font-size: 16px;
   border-radius: 4px;
   cursor: pointer;
   text-decoration: none;
-
-}
-
-#searchdoc {
-  font-weight: bold;
-  border: none;
-  font-size: large;
-}
-
-.btn-light:hover {
-  background-color: var(--light);
-}
-
-.input-field,
-.select-field,
-.btn-light {
-  width: 90%;
-  padding: 13px 1px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  margin-top: 10px;
 }
 
 .contact-number {
-  font-size: 42px;
-  margin-top: 80px;
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .info-box {
+    flex: 1 1 calc(50% - 40px); 
+  }
+}
+
+@media (max-width: 768px) {
+  .info-box {
+    flex: 1 1 100%; 
+  }
+
+  .contact-number {
+    font-size: 24px;
+  }
+
+  .info-title {
+    font-size: 18px;
+  }
 }
 
 .about-section {
-  margin-top: 240px;
+ 
   padding: 50px 0;
 
 }
