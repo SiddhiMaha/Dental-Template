@@ -2,7 +2,7 @@
   --primary: #06A3DA;
   --light: #EEF9FF;
   --dark: #091E3E;
-  --secondary: #f57e57
+  --secondary: #f57e57;
 }
 
 body {
@@ -343,7 +343,7 @@ h1 {
 }
 
 .btn-primary:hover {
-  background: var(--secondary);
+  background:var(--secondary);
   transform: scale(1.05);
 }
 
@@ -573,9 +573,6 @@ h1 {
   text-decoration: none;
 }
 
-.btn-primary:hover {
-  background-color: var(--secondary-color);
-}
 
 .image-content {
   flex: 5;
@@ -1003,7 +1000,7 @@ form {
 }
 
 .appointment-btn:hover {
-  background: var(--secondary-color);
+  background: var(--secondary);
 }
 
 .testimonial-section {
