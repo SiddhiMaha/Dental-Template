@@ -19,7 +19,7 @@ img {
 
 .header {
   align-items: center;
-  background-color:var(--light);
+  background-color: var(--light);
   display: flex;
   flex-wrap: wrap;
   font-size: clamp(1.125rem, 1.05rem + 0.375vw, 1.5rem);
@@ -102,10 +102,10 @@ img {
   display: flex;
   justify-content: space-between;
   padding: 10px 30px;
-  position: sticky; 
-  top: 0; 
+  position: sticky;
+  top: 0;
   z-index: 1000;
- }
+}
 
 .brand-logo h1 {
   align-items: center;
@@ -177,20 +177,20 @@ img {
     z-index: 100;
   }
 
- .nav-links li {
+  .nav-links li {
     margin-top: 80px;
   }
 
- .nav-links li a {
+  .nav-links li a {
     padding: 10px;
   }
-  
+
   .open-menu,
   .close-menu {
     display: block;
   }
 
-  #check:checked ~ .navbar-right .nav-links {
+  #check:checked~.navbar-right .nav-links {
     right: 0;
   }
 
@@ -335,7 +335,8 @@ h1 {
 
 .caption-title {
   font-size: 31px;
-  margin-bottom: 15px;
+  font-weight: 600;
+  margin-bottom: -60px;
   text-transform: uppercase;
 }
 
@@ -345,7 +346,7 @@ h1 {
 }
 
 .btn-primary:hover {
-  background:var(--secondary);
+  background: var(--secondary);
   transform: scale(1.05);
 }
 
@@ -425,6 +426,7 @@ h1 {
 
 .info-title {
   font-size: 20px;
+  font-weight: bold;
   margin-bottom: 15px;
 }
 
@@ -458,8 +460,9 @@ h1 {
 }
 
 .contact-number {
-  font-size: 28px;
+  font-size: 30px;
   margin-top: 20px;
+  font-weight: bold;
 }
 
 @media (max-width: 1024px) {
@@ -530,7 +533,7 @@ h1 {
 
 .title-About {
   color: #091E3E;
-  font-size: 30px;
+  font-size: 52px;
   font-weight: bold;
   margin-bottom: 20px;
   text-align: left;
@@ -730,10 +733,12 @@ form {
 .section-header .title-highlight {
   color: var(--primary);
   font-size: 19px;
+  font-weight: 700;
   margin: 13px;
   margin-bottom: 16px;
   text-transform: uppercase;
 }
+
 
 .section-header .main-title {
   font-size: 36px;
@@ -766,13 +771,12 @@ form {
 
 .service-info {
   padding: 15px;
-}
-
-.service-info h5 {
   color: var(--dark-color);
   font-size: 16px;
   margin: 0;
+  font-weight: bold;
 }
+
 
 .appointment-container {
   align-items: center;
@@ -789,15 +793,16 @@ form {
   text-align: center;
 }
 
-.appointment-box h3 {
-  font-size: 24px;
-  margin-bottom: 15px;
-}
-
 .appointment-box p {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 20px;
 }
+
+.appointment-box .make-appointment {
+  font-size: 30px;
+  font-weight: bold;
+}
+
 
 .offer-section {
   align-items: center;
@@ -890,6 +895,7 @@ form {
   color: var(--dark-color);
   font-size: 2.5rem;
   margin: 0 0 20px;
+  font-weight: bold;
 }
 
 .pricing-description {
@@ -901,11 +907,13 @@ form {
   color: var(--primary);
   font-size: 1.1rem;
   margin-bottom: 5px;
+  font-weight: bold;
 }
 
 .call-number {
   color: var(--dark-color);
   font-size: 2rem;
+  font-weight: bold;
 }
 
 .pricing-cards {
@@ -928,6 +936,10 @@ form {
 
 .card-image {
   position: relative;
+}
+
+.card-details p {
+  font-weight: 600;
 }
 
 .card-image img {
@@ -1065,7 +1077,7 @@ form {
 
 .testimonial-name {
   color: var(--light);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   font-weight: bold;
   margin: 0;
 }
@@ -1100,13 +1112,13 @@ form {
     padding: 20px;
   }
 
- .testimonial-img {
+  .testimonial-img {
     height: 60px;
     width: 60px;
-    
+
   }
 
-.carousel-arrow {
+  .carousel-arrow {
     height: 30px;
     font-size: 1rem;
     width: 30px;
@@ -1386,55 +1398,56 @@ form {
 
 @media(max-width:480px) {
 
-  .header{
+  .header {
     font-size: 21px;
-    height:60px;
+    height: 60px;
     padding: 2px 2px;
     width: 950px;
   }
 
-  .contact{
+  .contact {
     font-size: 12px;
     height: 31px;
     width: 349px;
   }
 
-  .info{
+  .info {
     font-size: 21px;
   }
 
 }
 
-@media (max-width:820px){
+@media (max-width:820px) {
 
-  .image-content{
-    top:300px
+  .image-content {
+    top: 300px
   }
 }
 
-@media (max-width:375px){
+@media (max-width:375px) {
 
-  .navbar-right{
-    padding:38px;
+  .navbar-right {
+    padding: 38px;
   }
 
-  .actions{
+  .actions {
     margin-left: 160px;
-   }
-
-  .open-menu{
-     margin-right: -70px;
   }
 
-  .carousel-container{
-    width:909px;
+  .open-menu {
+    margin-right: -70px;
   }
 
-  .info-section{
+  .carousel-container {
+    width: 909px;
+  }
+
+  .info-section {
     bottom: -747px;
   }
 
 }
+
 @media (max-width: 414px) {
 
   .nav-links {
@@ -1478,7 +1491,7 @@ form {
     top: 134px;
   }
 
-  #check:checked ~ .navbar-right .nav-links {
+  #check:checked~.navbar-right .nav-links {
     right: 0;
   }
 }
