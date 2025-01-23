@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="header">
         <div class="topbar">
@@ -74,15 +76,14 @@
             <p class="info-title">Search A Doctor</p>
             <form>
                 <label for="appointment-date"></label>
-                <input  id="appointment-date"  type="datetime-local" min="2025-01-23T07:30"
-                max="2025-02-23T19:30" value="2025-01-23T07:30"  class="btn-light" required>
-     
-
-                <select  id="service" class="btn-light" required>
+                <input id="appointment-date" type="date" min="2025-01-23" max="2025-02-23"
+                  class="btn-light" required>
+                <select id="service" class="btn-light" required>
                     <option value="">Select A Service</option>
-                    <option value="1"> 1</option>
-                    <option value="2"> 2</option>
-                    <option value="3"> 3</option>
+                    <option value="1"> Cosmetic Dentistry</option>
+                    <option value="2">Dental Implants</option>
+                    <option value="3">Dental Bridges</option>
+                    <option value="3">Teeth Whitening</option>
                 </select>
                 <button class="btn-light" id="searchdoc">Search Doctor</button>
             </form>
@@ -143,16 +144,17 @@
                 <form>
                     <div class="form-row">
                         <select class="form-input" required>
-                            <option value="" >Select A Service</option>
-                            <option value="1">1</option>
-                            <option value="2"> 2</option>
-                            <option value="3"> 3</option>
+                            <option value="">Select A Service</option>
+                            <option value="1">Cosmetic Dentistry</option>
+                            <option value="2"> Dental Implants</option>
+                            <option value="3"> Dental Bridges</option>
+                            <option value="4">Teeth Whitening</option>
                         </select>
                         <select class="form-input" required>
                             <option value="">Select Doctor</option>
-                            <option value="1">1</option>
-                            <option value="2"> 2</option>
-                            <option value="3"> 3</option>
+                            <option value="1">Dr.John Doe</option>
+                            <option value="2"> Dr.John Doe</option>
+                            <option value="3"> Dr.John Doe</option>
                         </select>
                     </div>
                     <div class="form-row">
@@ -160,8 +162,8 @@
                         <input type="email" class="form-input" placeholder="Your Email" required>
                     </div>
                     <div class="form-row">
-                        <input  type="date" class="form-input" placeholder="Appointment Date" required>
-                        <input type="time" class="form-input" placeholder="Appointment Time" required>
+                        <input type="date" class="form-input" placeholder="Appointment Date"  min="2025-01-23" max="2025-02-23" required>
+                        <input type="time" class="form-input" placeholder="Appointment Time"  min="08:00"  max="21:00"  required>
                     </div>
                     <button type="submit" class="submit-button">Make Appointment</button>
                 </form>
