@@ -73,12 +73,16 @@
         <div class="info-box bg-dark">
             <p class="info-title">Search A Doctor</p>
             <form>
-                <input type="text" placeholder="Appointment Date" class="btn-light">
-                <select class="btn-light">
-                    <option>Select A Service</option>
-                    <option> 1</option>
-                    <option> 2</option>
-                    <option> 3</option>
+                <label for="appointment-date"></label>
+                <input  id="appointment-date"  type="datetime-local" min="2025-01-23T07:30"
+                max="2025-02-23T19:30" value="2025-01-23T07:30"  class="btn-light" required>
+     
+
+                <select  id="service" class="btn-light" required>
+                    <option value="">Select A Service</option>
+                    <option value="1"> 1</option>
+                    <option value="2"> 2</option>
+                    <option value="3"> 3</option>
                 </select>
                 <button class="btn-light" id="searchdoc">Search Doctor</button>
             </form>
@@ -138,26 +142,26 @@
                 <h1>Make Appointment</h1>
                 <form>
                     <div class="form-row">
-                        <select class="form-input">
-                            <option selected>Select A Service</option>
+                        <select class="form-input" required>
+                            <option value="" >Select A Service</option>
                             <option value="1">1</option>
                             <option value="2"> 2</option>
                             <option value="3"> 3</option>
                         </select>
-                        <select class="form-input">
-                            <option selected>Select Doctor</option>
+                        <select class="form-input" required>
+                            <option value="">Select Doctor</option>
                             <option value="1">1</option>
                             <option value="2"> 2</option>
                             <option value="3"> 3</option>
                         </select>
                     </div>
                     <div class="form-row">
-                        <input type="text" class="form-input" placeholder="Your Name">
-                        <input type="email" class="form-input" placeholder="Your Email">
+                        <input type="text" class="form-input" placeholder="Your Name" required>
+                        <input type="email" class="form-input" placeholder="Your Email" required>
                     </div>
                     <div class="form-row">
-                        <input type="text" class="form-input" placeholder="Appointment Date">
-                        <input type="text" class="form-input" placeholder="Appointment Time">
+                        <input  type="date" class="form-input" placeholder="Appointment Date" required>
+                        <input type="time" class="form-input" placeholder="Appointment Time" required>
                     </div>
                     <button type="submit" class="submit-button">Make Appointment</button>
                 </form>
@@ -399,7 +403,7 @@
         <div class="signup-form-wrapper">
             <form class="signup-form">
                 <div class="form-group">
-                    <input type="text" class="input-field" placeholder="Your Email">
+                    <input type="email" class="input-field" placeholder="Your Email" required>
                     <button class="signup-button">Sign Up</button>
                 </div>
             </form>
